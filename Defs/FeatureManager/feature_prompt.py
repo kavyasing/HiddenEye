@@ -18,11 +18,16 @@ def feature_prompt():
     print(
         "---------------------------------------------------------\n{0}[ PROMPT: PLEASE CHOOSE FEATURES YOU WOULD LIKE TO USE. ]{1}!! {0}\n---------------------------------------------------------".format(
             default_palette[0], default_palette[4]))
-    print("\n{0}[{1}A{0}]{1} KEYLOGGER (Usually Kills Connection) ".format(default_palette[0], default_palette[2]))
-    print("\n{0}[{1}B{0}]{1} FAKE CLOUDFARE PROTECTION PAGE ".format(default_palette[0], default_palette[2]))
-    print("\n{0}[{1}C{0}]{1} CAPTURED DATA EMAILED ".format(default_palette[0], default_palette[2]))
-    print("\n{0}[{1}0{0}]{1} PRESS ONLY ENTER FOR NONE OF THE ABOVE ".format(default_palette[0], default_palette[2]))
-    print('\n{0}[{1}*{0}]{1} Please type all together. Eg: ABC or AC {0}[{1}*{0}]{1}'.format(default_palette[0], default_palette[2]))
+    print("\n{0}[{1}A{0}]{1} KEYLOGGER (Usually Kills Connection) ".format(
+        default_palette[0], default_palette[2]))
+    print("\n{0}[{1}B{0}]{1} FAKE CLOUDFARE PROTECTION PAGE ".format(
+        default_palette[0], default_palette[2]))
+    print("\n{0}[{1}C{0}]{1} CAPTURED DATA EMAILED ".format(
+        default_palette[0], default_palette[2]))
+    print("\n{0}[{1}0{0}]{1} PRESS ONLY ENTER FOR NONE OF THE ABOVE ".format(
+        default_palette[0], default_palette[2]))
+    print('\n{0}[{1}*{0}]{1} Please type all together. Eg: ABC or AC {0}[{1}*{0}]{1}'.format(
+        default_palette[0], default_palette[2]))
     option = input(
         "\n\n{1}{0}YOUR CHOICE >>> {2}".format(default_palette[0], default_palette[4], default_palette[2]))
 
@@ -38,4 +43,3 @@ def feature_prompt():
                 cloudflare.add_cloudfare()
             elif "c" in x:
                 email_prompt.captured_data_email_configuration_prompt()
-
