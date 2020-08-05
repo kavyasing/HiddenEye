@@ -1,8 +1,8 @@
-from Defs.ImportManager.unsorted_will_be_replaced import run_command
-import Defs.ThemeManager.theme as theme
 import Defs.FeatureManager.cloudflare as cloudflare
 import Defs.FeatureManager.EmailManager.email_prompt as email_prompt
 import Defs.FeatureManager.keylogger as keylogger
+import Defs.ThemeManager.theme as theme
+from Defs.ImportManager.unsorted_will_be_replaced import run_command
 
 default_palette = theme.default_palette
 

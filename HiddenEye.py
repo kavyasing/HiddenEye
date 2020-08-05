@@ -7,8 +7,7 @@
 import multiprocessing
 import ssl
 import sys
-from os import environ
-from os import system
+from os import environ, system
 
 import Defs.ActionManager.main_runner as main_runner
 import Defs.ActionManager.Server.server_runner as server_runner
